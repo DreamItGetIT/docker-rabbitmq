@@ -39,3 +39,13 @@ Since RabbitMQ uses the ``$HOSTNAME`` in its data path, we need to explicitly se
       ######  ##        /var/log/rabbitmq/rabbit@rabbithost-sasl.log
       ##########
                   Starting broker... completed with 6 plugins.
+
+
+### To run as a daemon use -d
+    sudo docker run -d -p :5672 -p :15672 docker/rabbitmq
+    
+### To explicitly bind machine port to the container use the following command
+    sudo docker run -d -p 5672:5672 -p 15672:15672 docker/rabbitmq
+
+### Use the following url to access RabbitMQ Admin
+    localhost:15672
