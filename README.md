@@ -4,6 +4,13 @@ http://docs.docker.io/en/latest/use/builder/#dockerfile-examples
 
 http://www.rabbitmq.com/install-debian.html
 
+Blog describing the breaking changes in RabbitMQ 3.3
+http://www.rabbitmq.com/blog/2014/04/02/breaking-things-with-rabbitmq-3-3/
+
+Enabling access for the default guest user to login from remote machine
+http://www.rabbitmq.com/access-control.html
+
+
 ### To build:
 
     sudo docker build -t docker/rabbitmq .
